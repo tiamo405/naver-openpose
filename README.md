@@ -5,7 +5,6 @@ Download the torch model ,and put them in the model folder(mkdir by yourself)
 
 # Demo:
 
-python3 demo.py images/timg.jpeg
 
 # Downloads:
 * [body_25](https://pan.baidu.com/s/1CopeW-Em4Tm9H-Wl_hzVfg) download code : 9g4p ; [google cloud](https://drive.google.com/file/d/1ghXakEXhBMCdV78K6tCFTPp_vjJDWmcE/view?usp=sharing)
