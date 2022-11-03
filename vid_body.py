@@ -35,9 +35,11 @@ from os import path as osp
 tp = torch_openpose.torch_openpose('body_25')
 cap = cv2.VideoCapture("openpose_body_25/images/Messenger.mp4")
 i= 0
-result = cv2.VideoWriter('filename.avi', 
+frame_width = int(cap.get(3))
+frame_height = int(cap.get(4))
+result = cv2.VideoWriter('1.avi', 
                          cv2.VideoWriter_fourcc(*'MJPG'),
-                         10, (224,224))
+                         10, (frame_width, frame_height))
 while(cap.isOpened()):
      
     # Capture frame-by-frame
@@ -61,6 +63,6 @@ while(cap.isOpened()):
 cap.release()
 result.release()
 
-cv2.destroyAllWindows()
+# cv2.destroyAllWindows()
 
 
